@@ -64,11 +64,11 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
             fragmentManager.beginTransaction().add(R.id.head_container,headFragment).commit();
 
             BodyPartFragment bodyFragment=new BodyPartFragment();
-            headFragment.setImageIds(AndroidImageAssets.getHeads());
+            headFragment.setImageIds(AndroidImageAssets.getBodies());
             fragmentManager.beginTransaction().add(R.id.body_container,bodyFragment).commit();
 
             BodyPartFragment legFragment=new BodyPartFragment();
-            headFragment.setImageIds(AndroidImageAssets.getHeads());
+            headFragment.setImageIds(AndroidImageAssets.getLegs());
             fragmentManager.beginTransaction().add(R.id.leg_container,legFragment).commit();
         }
         else {
